@@ -1,0 +1,6 @@
+framework module Pods_Boogi {
+  umbrella header "Pods-Boogi-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostDetailViewController" customModule="Boogi" customModuleProvider="target">
+            <connections>
+                <outlet property="commentTextField" destination="Qdd-Af-oYi" id="po8-Qx-y8r"/>
+                <outlet property="commentView" destination="EwE-2u-THM" id="vYS-OS-MYk"/>
+                <outlet property="postDetailTableView" destination="Pkb-7M-r3B" id="CRz-0J-Qyt"/>
+                <outlet property="sendButton" destination="QVC-vN-PBT" id="BcX-Vg-KTR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sDt-2x-WWV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-7M-r3B">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwE-2u-THM">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVC-vN-PBT">
+                            <rect key="frame" x="355" y="5" width="49" height="40"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="등록"/>
+                            <connections>
+                                <action selector="commentSend:" destination="-1" eventType="touchUpInside" id="fJT-Xu-nFo"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="댓글을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-Af-oYi">
+                            <rect key="frame" x="10" y="5" width="335" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QVC-vN-PBT" secondAttribute="bottom" constant="5" id="FBt-kJ-DpV"/>
+                        <constraint firstItem="Qdd-Af-oYi" firstAttribute="leading" secondItem="EwE-2u-THM" secondAttribute="leading" constant="10" id="Jo2-UY-dAa"/>
+                        <constraint firstItem="QVC-vN-PBT" firstAttribute="top" secondItem="EwE-2u-THM" secondAttribute="top" constant="5" id="P9F-ZF-aSd"/>
+                        <constraint firstItem="QVC-vN-PBT" firstAttribute="leading" secondItem="Qdd-Af-oYi" secondAttribute="trailing" constant="10" id="SWd-Nk-eyY"/>
+                        <constraint firstAttribute="bottom" secondItem="Qdd-Af-oYi" secondAttribute="bottom" constant="5" id="e3r-cN-X4X"/>
+                        <constraint firstAttribute="trailing" secondItem="QVC-vN-PBT" secondAttribute="trailing" constant="10" id="iOt-t3-iah"/>
+                        <constraint firstItem="Qdd-Af-oYi" firstAttribute="top" secondItem="EwE-2u-THM" secondAttribute="top" constant="5" id="kta-H3-0ox"/>
+                        <constraint firstAttribute="height" constant="50" id="lt0-ES-rIG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EwE-2u-THM" firstAttribute="top" secondItem="Pkb-7M-r3B" secondAttribute="bottom" id="0ca-Zc-TvC"/>
+                <constraint firstItem="EwE-2u-THM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1aX-1v-GqE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EwE-2u-THM" secondAttribute="trailing" id="53e-SV-oNA"/>
+                <constraint firstItem="Pkb-7M-r3B" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FXa-iX-cPl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pkb-7M-r3B" secondAttribute="trailing" id="tJT-1O-CKc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EwE-2u-THM" secondAttribute="bottom" id="yIR-z1-F1w"/>
+                <constraint firstItem="Pkb-7M-r3B" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zTa-nv-efB"/>
+            </constraints>
+            <point key="canvasLocation" x="-155.07246376811597" y="39.508928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

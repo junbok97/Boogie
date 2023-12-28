@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="CommunityListCell" customModule="Boogi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-WS-khe">
+                        <rect key="frame" x="10" y="10" width="269.5" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="커뮤니티 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eA-s0-v4U">
+                                <rect key="frame" x="0.0" y="0.0" width="87" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="포스트 이름" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SX9-7T-LzS">
+                                <rect key="frame" x="0.0" y="29.5" width="259.5" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해쉬태그" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzy-4K-s9t">
+                                <rect key="frame" x="0.0" y="85.5" width="42" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wM5-SW-SBF">
+                                <rect key="frame" x="0.0" y="110" width="131" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-5F-b27">
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Fio-c1-3Xm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="ZhB-z2-DGY">
+                                        <rect key="frame" x="31" y="0.0" width="100" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-Xd-AB3">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="20"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="999">
+                                                    <imageReference key="image" image="heart" catalog="system" symbolScale="medium"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi2-ql-YRK">
+                                                <rect key="frame" x="59" y="0.0" width="41" height="20"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="999">
+                                                    <imageReference key="image" image="message" catalog="system" symbolScale="medium"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yi2-ql-YRK" firstAttribute="leading" secondItem="zms-Xd-AB3" secondAttribute="trailing" id="5Fr-vY-afJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="yi2-ql-YRK" secondAttribute="trailing" id="8Mj-NT-LUi"/>
+                                            <constraint firstAttribute="width" constant="100" id="fYb-VW-t3w"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wM5-SW-SBF" firstAttribute="top" secondItem="vzy-4K-s9t" secondAttribute="bottom" constant="10" id="MJh-6w-z10"/>
+                            <constraint firstAttribute="trailing" secondItem="SX9-7T-LzS" secondAttribute="trailing" constant="10" id="RHk-0C-TJJ"/>
+                            <constraint firstItem="vzy-4K-s9t" firstAttribute="top" secondItem="SX9-7T-LzS" secondAttribute="bottom" constant="10" id="aZH-DA-azD"/>
+                            <constraint firstItem="SX9-7T-LzS" firstAttribute="top" secondItem="4eA-s0-v4U" secondAttribute="bottom" constant="10" id="c6G-ho-Eky"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLO-wo-tji">
+                        <rect key="frame" x="289.5" y="61" width="79.5" height="28.5"/>
+                        <buttonConfiguration key="configuration" style="filled" title="커뮤니티 홈">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="communityhomeButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GHd-rS-IsJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JLO-wo-tji" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PIm-id-x3Y"/>
+                    <constraint firstItem="JLO-wo-tji" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="PeQ-ex-Kr2"/>
+                    <constraint firstItem="UPd-WS-khe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WEY-4f-Dep"/>
+                    <constraint firstAttribute="bottom" secondItem="UPd-WS-khe" secondAttribute="bottom" constant="10" id="qI9-MI-7pI"/>
+                    <constraint firstItem="JLO-wo-tji" firstAttribute="leading" secondItem="UPd-WS-khe" secondAttribute="trailing" constant="10" id="syC-V3-gpb"/>
+                    <constraint firstItem="UPd-WS-khe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zse-Yy-ZYo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentButton" destination="yi2-ql-YRK" id="0d3-gM-yst"/>
+                <outlet property="contentsLabel" destination="SX9-7T-LzS" id="E4o-8E-Ygt"/>
+                <outlet property="createdAtLabel" destination="L2b-5F-b27" id="eQC-g3-1l1"/>
+                <outlet property="hasTagLabel" destination="vzy-4K-s9t" id="EGm-cV-emA"/>
+                <outlet property="likeButton" destination="zms-Xd-AB3" id="YQ9-AA-sFT"/>
+                <outlet property="titleLabel" destination="4eA-s0-v4U" id="d8B-vm-cY9"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

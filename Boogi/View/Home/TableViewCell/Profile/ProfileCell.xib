@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="237" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="Boogi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="237"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="237"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="학과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlt-g3-mrG">
+                        <rect key="frame" x="84.5" y="27.5" width="28" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTp-AR-TX2">
+                        <rect key="frame" x="84.5" y="147.5" width="28" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="태그번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eI-7A-rHc">
+                        <rect key="frame" x="77.5" y="177.5" width="42" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="설명란" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgd-4h-aWp">
+                        <rect key="frame" x="83" y="202.5" width="31.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-uz-DJU">
+                        <rect key="frame" x="58.5" y="59" width="80" height="77"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Gdt-50-wPV"/>
+                            <constraint firstAttribute="width" constant="80" id="jMQ-wj-JZ5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dlt-g3-mrG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5GU-rF-3Av"/>
+                    <constraint firstItem="WTp-AR-TX2" firstAttribute="centerX" secondItem="Zrg-uz-DJU" secondAttribute="centerX" id="KhC-gs-hXb"/>
+                    <constraint firstItem="tgd-4h-aWp" firstAttribute="centerX" secondItem="5eI-7A-rHc" secondAttribute="centerX" id="Nik-gP-LGV"/>
+                    <constraint firstItem="tgd-4h-aWp" firstAttribute="top" secondItem="5eI-7A-rHc" secondAttribute="bottom" constant="10" id="XhS-b6-U7f"/>
+                    <constraint firstAttribute="bottom" secondItem="tgd-4h-aWp" secondAttribute="bottom" constant="10" id="ald-1E-hXh"/>
+                    <constraint firstItem="WTp-AR-TX2" firstAttribute="top" secondItem="Zrg-uz-DJU" secondAttribute="bottom" constant="10" id="cxe-vT-JHH"/>
+                    <constraint firstItem="5eI-7A-rHc" firstAttribute="top" secondItem="WTp-AR-TX2" secondAttribute="bottom" constant="10" id="eOP-hX-bSt"/>
+                    <constraint firstItem="Zrg-uz-DJU" firstAttribute="top" secondItem="Dlt-g3-mrG" secondAttribute="bottom" constant="10" id="haY-uW-iHM"/>
+                    <constraint firstItem="Zrg-uz-DJU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u3E-a2-QSH"/>
+                    <constraint firstItem="Zrg-uz-DJU" firstAttribute="centerX" secondItem="Dlt-g3-mrG" secondAttribute="centerX" id="vtN-Z5-JVk"/>
+                    <constraint firstItem="5eI-7A-rHc" firstAttribute="centerX" secondItem="WTp-AR-TX2" secondAttribute="centerX" id="zjV-3t-U8B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userDepartmentLabel" destination="Dlt-g3-mrG" id="mg1-Lf-6uz"/>
+                <outlet property="userIntroduce" destination="tgd-4h-aWp" id="vNy-z8-Lkc"/>
+                <outlet property="userNameLabel" destination="WTp-AR-TX2" id="UAf-vj-EVa"/>
+                <outlet property="userProfileImageView" destination="Zrg-uz-DJU" id="C7D-w3-Cu0"/>
+                <outlet property="userTagLabel" destination="5eI-7A-rHc" id="ioc-g8-UBK"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="136.27232142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
