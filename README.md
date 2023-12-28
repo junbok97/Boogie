@@ -39,6 +39,5 @@
 ### iOS
 * Xcode Swift5
 
-### Repository
-* [boogi-iOS](https://github.com/boogi-on-and-on/boogi-iOS)
-    * 네이티브 iOS 코드
+### 디자인
+- [figmna](https://www.figma.com/file/8BDdhCW8RN65fxYJPO2TFF/iOS?type=design&t=0bvuXtrLmgqms9Go-0)
