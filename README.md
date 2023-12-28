@@ -40,4 +40,4 @@
 * Xcode Swift5
 
 ### 디자인
-- [figmna](https://www.figma.com/file/8BDdhCW8RN65fxYJPO2TFF/iOS?type=design&t=0bvuXtrLmgqms9Go-0)
+- [figma](https://www.figma.com/file/8BDdhCW8RN65fxYJPO2TFF/iOS?type=design&t=0bvuXtrLmgqms9Go-0)
